@@ -9,10 +9,12 @@ spec:
   chart:
     spec:
       chart: nginx
+      version: "18.2.2"  # Using the latest version of Nginx from Bitnami
       sourceRef:
         kind: HelmRepository
-        name: stable-charts  # This points to the Bitnami repo now
+        name: stable-charts  # Ensure this matches your HelmRepository name
         namespace: flux-system
+  interval: 5m
   values:
     service:
       type: LoadBalancer
