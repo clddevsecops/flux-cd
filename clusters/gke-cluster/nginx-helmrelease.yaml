@@ -11,8 +11,9 @@ spec:
       chart: nginx
       sourceRef:
         kind: HelmRepository
-        name: stable-charts
+        name: stable-charts  # This points to the Bitnami repo now
         namespace: flux-system
   values:
     service:
       type: LoadBalancer
+

@@ -1,9 +1,10 @@
----
-apiVersion: source.toolkit.fluxcd.io/v1
+
+apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: stable-charts
+  name: stable-charts   # You can keep the name the same or rename it if desired
   namespace: flux-system
 spec:
-  interval: 1h0m0s
-  url: https://charts.helm.sh/stable
+  interval: 1h
+  url: https://charts.bitnami.com/bitnami
+
