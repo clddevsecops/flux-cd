@@ -9,7 +9,6 @@ spec:
   chart:
     spec:
       chart: nginx
-      version: "1.0.0"  # Example version
       sourceRef:
         kind: HelmRepository
         name: stable-charts
