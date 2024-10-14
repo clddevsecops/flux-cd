@@ -17,5 +17,5 @@ spec:
   interval: 5m
   values:
     service:
-      type: LoadBalancer
+      type: LoadBalancer #changed this for a commment
 
