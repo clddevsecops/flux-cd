@@ -6,10 +6,10 @@ metadata:
   namespace: default
 spec:
   releaseName: nginx
-  interval: 5m0s  # This is the field that was missing
   chart:
     spec:
       chart: nginx
+      version: "1.0.0"  # Example version
       sourceRef:
         kind: HelmRepository
         name: stable-charts
@@ -17,4 +17,3 @@ spec:
   values:
     service:
       type: LoadBalancer
-
